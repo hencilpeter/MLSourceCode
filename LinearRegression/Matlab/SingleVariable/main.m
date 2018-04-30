@@ -24,11 +24,10 @@ normalizedXWithOnes = [ones(m, 1), meanNormalizedX];
 theta = [1 1];
 
 #iterations
-iterations = 500
+iterations = 500;
 
 learningRate = 1;
-[JValues, thetaValues] = gradientDescent(normalizedXWithOnes, y, theta', learningRate, iterations);
-
+[JValues, thetaValues] = calculateGradient(normalizedXWithOnes, y, theta', learningRate, iterations);
 
 
 
